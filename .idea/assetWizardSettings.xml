@@ -34,6 +34,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
+                                                <entry key="color" value="ffffff" />
                                                 <entry key="scalingPercent" value="125" />
                                               </map>
                                             </option>
@@ -57,7 +58,6 @@
                                   <option name="values">
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
-                                      <entry key="backgroundColor" value="dd0006" />
                                       <entry key="backgroundLayerName" value="ic_launcher_background" />
                                       <entry key="foregroundAssetType" value="TEXT" />
                                       <entry key="foregroundLayerName" value="ic_launcher_foreground" />

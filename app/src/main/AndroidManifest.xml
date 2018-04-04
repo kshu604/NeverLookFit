@@ -21,7 +21,7 @@
             android:name=".activities.RegisterActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activities.UsersListActivity"
+            android:name=".activities.HomePageActivity"
             android:screenOrientation="portrait" />
     </application>
 

@@ -19,5 +19,10 @@
     <string name="error_valid_email_password">Wrong Email or Password</string>
     <string name="action_settings">Settings</string>
     <string name="text_hello">Hello,</string>
-    <string name="text_title">NeverGetFit Userlist</string>
+    <string name="text_title">NeverGetFit Homepage</string>
+    <string name="text_record">Record Workout</string>
+    <string name="text_set">Set Goals</string>
+    <string name="text_progress">Progress Photos</string>
+
+
 </resources>
