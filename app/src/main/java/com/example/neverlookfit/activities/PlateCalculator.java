@@ -5,13 +5,12 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.example.neverlookfit.R;
 
-public class SetGoalsActivity extends AppCompatActivity {
+public class PlateCalculator extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_set_goals);
+        setContentView(R.layout.activity_plate_calculator);
+
     }
-
-
 }

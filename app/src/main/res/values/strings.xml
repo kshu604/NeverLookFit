@@ -30,6 +30,15 @@
     <string name="text_keyword">Keyword</string>
     <string name="text_location">Location</string>
     <string name="text_date">Select date</string>
+    <string name="text_monday">Monday</string>
+    <string name="text_tuesday">Tuesday</string>
+    <string name="text_wednesday">Wednesday</string>
+    <string name="text_thursday">Thursday</string>
+    <string name="text_friday">Friday</string>
+    <string name="text_saturday">Saturday</string>
+    <string name="text_sunday">Sunday</string>
+    <string name="text_select">Select the Date</string>
+    <string name="text_calculator">Plate Calculator</string>
 
 
 </resources>

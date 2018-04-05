@@ -34,7 +34,6 @@ public class ProgressPhotoActivity extends AppCompatActivity {
     String returnKeyword, returnLocation;
     private String currentPath;
     private int currentIndex;
-    private int id;
     private ArrayList<String> photoGallery;
     private int returnEndDate, returnStartDate;
     private int date;
@@ -54,6 +53,7 @@ public class ProgressPhotoActivity extends AppCompatActivity {
         leftBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                photoGallery = populateGallery();
                 currentIndex--;
                 if (currentIndex < 0)
                     currentIndex = photoGallery.size() - 1;
@@ -64,6 +64,7 @@ public class ProgressPhotoActivity extends AppCompatActivity {
         rightBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                photoGallery = populateGallery();
                 currentIndex++;
                 if (currentIndex > photoGallery.size() - 1)
                     currentIndex = 0;
@@ -166,7 +167,6 @@ public class ProgressPhotoActivity extends AppCompatActivity {
     private File createImageFile() throws IOException {
         // Create an image file name
         String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-        String keyWord;
         String imageFileName = "JPEG_" + timeStamp + "_";
         File storageDir = getExternalFilesDir(Environment.DIRECTORY_PICTURES);
         File image = File.createTempFile(

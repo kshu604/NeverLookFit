@@ -9,11 +9,11 @@ import android.widget.Button;
 
 import com.example.neverlookfit.R;
 
-public class HomePageActivity extends AppCompatActivity implements View.OnClickListener {
+public class HomePageActivity extends AppCompatActivity {
 
     private final AppCompatActivity activity = HomePageActivity.this;
     private AppCompatTextView textViewName;
-    private Button ProgressPhotos;
+    private Button ProgressPhotos, RecordWorkout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,12 +22,11 @@ public class HomePageActivity extends AppCompatActivity implements View.OnClickL
         getSupportActionBar().setTitle("");
         initViews();
         initObjects();
-        initListeners();
+        initButtons();
     }
 
     private void initViews() {
         textViewName = (AppCompatTextView) findViewById(R.id.textViewName);
-        ProgressPhotos = (Button) findViewById(R.id.buttonProgressPhotos);
     }
 
     private void initObjects() {
@@ -35,18 +34,25 @@ public class HomePageActivity extends AppCompatActivity implements View.OnClickL
         textViewName.setText(emailFromIntent);
     }
 
-    private void initListeners() {
-        ProgressPhotos.setOnClickListener(this);
+    private void initButtons() {
+        ProgressPhotos = (Button) findViewById(R.id.buttonProgressPhotos);
+        ProgressPhotos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), ProgressPhotoActivity.class);
+                startActivity(intent);
+            }
+        });
+        RecordWorkout = (Button) findViewById(R.id.buttonRecordWorkout);
+        RecordWorkout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), RecordWorkoutDateActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.buttonProgressPhotos:
-                Intent intent = new Intent(this, ProgressPhotoActivity.class);
-                startActivity(intent);
-                break;
-        }
-    }
 
 }
