@@ -33,19 +33,19 @@
     </android.support.v7.widget.LinearLayoutCompat>
 
     <Button
-        android:id="@+id/RecordWorkout"
+        android:id="@+id/buttonRecordWorkout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/text_record" />
 
     <Button
-        android:id="@+id/SetGoals"
+        android:id="@+id/buttonSetGoals"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/text_set" />
 
     <Button
-        android:id="@+id/ProgressPhotos"
+        android:id="@+id/buttonProgressPhotos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/text_progress" />

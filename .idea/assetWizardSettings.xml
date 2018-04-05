@@ -35,7 +35,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="ffffff" />
-                                                <entry key="scalingPercent" value="125" />
+                                                <entry key="scalingPercent" value="129" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -47,7 +47,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="fontFamily" value="Roboto Black" />
-                                                <entry key="text" value="NvrGetFit" />
+                                                <entry key="text" value="NvrLookFit" />
                                               </map>
                                             </option>
                                           </PersistentState>

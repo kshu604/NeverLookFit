@@ -1,8 +1,5 @@
 package com.example.neverlookfit.activities;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
@@ -12,7 +9,6 @@ import android.support.v4.widget.NestedScrollView;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.AppCompatButton;
 import android.support.v7.widget.AppCompatTextView;
-import android.util.Log;
 import android.view.View;
 
 import com.example.neverlookfit.R;
@@ -107,7 +103,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             homeIntent.putExtra("EMAIL", textInputEditTextEmail.getText().toString().trim());
             emptyInputEditText();
             startActivity(homeIntent);
-
 
         } else {
             // Snack Bar to show success message that record is wrong
