@@ -39,6 +39,16 @@
     <string name="text_sunday">Sunday</string>
     <string name="text_select">Select the Date</string>
     <string name="text_calculator">Plate Calculator</string>
+    <string name="text_total">(total bar weight)</string>
+    <string name="text_45lb">45 lb</string>
+    <string name="text_35lb">35 lb</string>
+    <string name="text_25lb">25 lb</string>
+    <string name="text_10lb">10 lb</string>
+    <string name="text_5lb">5 lb</string>
+    <string name="text_lb">lb</string>
+    <string name="text_minus">-</string>
+    <string name="text_add">+</string>
+
 
 
 </resources>
