@@ -54,6 +54,7 @@
             android:label="@string/text_select"
             android:screenOrientation="portrait" />
         <activity android:name=".activities.RecordWorkoutActivity" />
+        <activity android:name=".activities.RecordExercise" />
         <activity android:name=".activities.SetGoalsActivity" />
         <activity android:name=".activities.PlateCalculatorActivity" />
         <activity android:name=".activities.ViewGoalsActivity"></activity>

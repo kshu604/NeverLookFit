@@ -15,10 +15,112 @@
         android:layout_marginLeft="148dp"
         android:layout_marginRight="148dp"
         android:layout_marginStart="148dp"
-        android:layout_marginTop="428dp"
         android:text="@string/text_calculator"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="285dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonPlateCalculator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLocation">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteY="113dp">
+
+            <Button
+                android:id="@+id/buttonAddExercise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_add_exercise"
+                tools:layout_editor_absoluteX="147dp"
+                tools:layout_editor_absoluteY="146dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="@string/text_MMDDYYY"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTextDate"
+        tools:layout_editor_absoluteX="196dp" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="110dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.636"
+        app:layout_constraintStart_toEndOf="@+id/textViewDate"
+        app:layout_constraintTop_toBottomOf="@+id/editTextWorkoutTitle" />
+
+    <EditText
+        android:id="@+id/editTextLocation"
+        android:layout_width="110dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewDate"
+        app:layout_constraintEnd_toStartOf="@+id/textViewDate" />
+
+    <TextView
+        android:id="@+id/textViewLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/text_location"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTextLocation"
+        app:layout_constraintEnd_toStartOf="@+id/editTextLocation"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/text_workout_title"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTextWorkoutTitle"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextWorkoutTitle"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toStartOf="@+id/textViewDate"
+        app:layout_constraintStart_toEndOf="@+id/textViewTitle"
         app:layout_constraintTop_toTopOf="parent" />
+
 </android.support.constraint.ConstraintLayout>
