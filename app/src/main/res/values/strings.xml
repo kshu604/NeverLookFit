@@ -48,7 +48,15 @@
     <string name="text_lb">lb</string>
     <string name="text_minus">-</string>
     <string name="text_add">+</string>
-
+    <string name="text_weight">Weight (lbs)</string>
+    <string name="text_body">Body Fat (%)</string>
+    <string name="text_chest">Chest (in)</string>
+    <string name="text_bicep">Biceps (in)</string>
+    <string name="text_hip">Hip (in)</string>
+    <string name="text_thigh">Thighs (in)</string>
+    <string name="text_recordGoals">Record</string>
+    <string name="text_viewGoals">View Goals</string>
+    <string name="text_allGoals">All Goals</string>
 
 
 </resources>

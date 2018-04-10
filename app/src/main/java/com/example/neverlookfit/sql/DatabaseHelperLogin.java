@@ -11,7 +11,7 @@ import com.example.neverlookfit.model.User;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DatabaseHelper extends SQLiteOpenHelper {
+public class DatabaseHelperLogin extends SQLiteOpenHelper {
 
     // Database Version
     private static final int DATABASE_VERSION = 1;
@@ -41,7 +41,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
      *
      * @param context
      */
-    public DatabaseHelper(Context context) {
+    public DatabaseHelperLogin(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorBackground"
     tools:context=".activities.SearchActivity">
 
     <TextView
@@ -14,7 +15,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="32dp"
         android:text="@string/text_date"
-        android:textColor="@android:color/darker_gray"
+        android:textColor="@android:color/white"
         android:textSize="22sp"
         app:layout_constraintEnd_toStartOf="@+id/textViewTotalWeight"
         app:layout_constraintHorizontal_bias="0.0"
@@ -28,7 +29,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginTop="32dp"
         android:text="@string/text_date"
-        android:textColor="@android:color/darker_gray"
+        android:textColor="@android:color/white"
         android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/search_location" />
@@ -39,7 +40,7 @@
         android:layout_height="30dp"
         android:layout_marginTop="32dp"
         android:text="@string/text_to"
-        android:textColor="@android:color/darker_gray"
+        android:textColor="@android:color/white"
         android:textSize="22sp"
         app:layout_constraintEnd_toStartOf="@+id/maxDate"
         app:layout_constraintTop_toBottomOf="@+id/search_location" />
@@ -51,7 +52,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:text="@string/text_from"
-        android:textColor="@android:color/darker_gray"
+        android:textColor="@android:color/white"
         android:textSize="22sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/search_location" />
@@ -66,7 +67,7 @@
         android:ems="10"
         android:hint="@string/text_keyword"
         android:inputType="text"
-        android:textColorHint="@android:color/darker_gray"
+        android:textColorHint="@android:color/white"
         android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -84,7 +85,7 @@
         android:hint="@string/text_location"
         android:inputType="textPostalAddress"
 
-        android:textColorHint="@android:color/darker_gray"
+        android:textColorHint="@android:color/white"
         android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -101,6 +102,7 @@
         android:onClick="search"
         android:text="@string/search_button"
         android:textSize="22sp"
+        android:background="@color/colorTextHint"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"

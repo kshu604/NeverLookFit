@@ -13,7 +13,7 @@ public class HomePageActivity extends AppCompatActivity {
 
     private final AppCompatActivity activity = HomePageActivity.this;
     private AppCompatTextView textViewName;
-    private Button ProgressPhotos, RecordWorkout;
+    private Button ProgressPhotos, RecordWorkout, SetGoals, ViewGoals;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,7 +51,22 @@ public class HomePageActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+        SetGoals = (Button) findViewById(R.id.buttonSetGoals);
+        SetGoals.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), SetGoalsActivity.class);
+                startActivity(intent);
+            }
+        });
+        ViewGoals = (Button) findViewById(R.id.buttonViewGoals);
+        ViewGoals.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), ViewGoalsActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
 
