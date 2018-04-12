@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 import com.example.neverlookfit.R;
 
-public class PlateCalculator extends AppCompatActivity {
+public class PlateCalculatorActivity extends AppCompatActivity {
 
     TextView textViewvalue, textView1, textView2, textView3, textView4, textView5;
     private Button buttonMinus1, buttonMinus2, buttonMinus3, buttonMinus4, buttonMinus5,

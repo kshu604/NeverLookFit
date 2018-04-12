@@ -30,7 +30,7 @@ public class RecordWorkoutActivity extends AppCompatActivity {
         buttonPlateCalculator.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), PlateCalculator.class);
+                Intent intent = new Intent(getApplicationContext(), PlateCalculatorActivity.class);
                 startActivity(intent);
             }
         });

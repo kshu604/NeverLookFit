@@ -31,7 +31,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private AppCompatTextView textViewLinkRegister;
 
     private InputValidation inputValidation;
-    private DatabaseHelper databaseHelper;
+    private DatabaseHelper databaseHelperLogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,7 +66,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     }
 
     private void initObjects() {
-        databaseHelper = new DatabaseHelper(activity);
+        databaseHelperLogin = new DatabaseHelper(activity);
         inputValidation = new InputValidation(activity);
 
     }
@@ -96,7 +96,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             return;
         }
 
-        if (databaseHelper.checkUser(textInputEditTextEmail.getText().toString().trim()
+        if (databaseHelperLogin.checkUser(textInputEditTextEmail.getText().toString().trim()
                 , textInputEditTextPassword.getText().toString().trim())) {
 
             Intent homeIntent = new Intent(activity, HomePageActivity.class);

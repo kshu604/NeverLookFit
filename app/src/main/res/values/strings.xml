@@ -48,18 +48,20 @@
     <string name="text_lb">lb</string>
     <string name="text_minus">-</string>
     <string name="text_add">+</string>
-    <string name="text_MMDDYYY">Date:</string>
-    <string name="text_workout_title">Title:</string>
-    <string name="add_exercise_button">Add Exercise</string>
-    <string name="stopwatch_button">Stopwatch</string>
-    <string name="record_button">Record</string>
-    <string name="text_0">0</string>
-    <string name="text_1">1</string>
-    <string name="text_2">2</string>
-    <string name="text_3">3</string>
-    <string name="text_4">4</string>
-    <string name="text_x">X</string>
-
-
-
+    <string name="text_weight">Weight (lbs)</string>
+    <string name="text_body">Body Fat (%)</string>
+    <string name="text_chest">Chest (in)</string>
+    <string name="text_bicep">Biceps (in)</string>
+    <string name="text_hip">Hip (in)</string>
+    <string name="text_thigh">Thighs (in)</string>
+    <string name="text_recordGoals">Record</string>
+    <string name="text_viewGoals">View Goals</string>
+    <string name="text_allGoals">All Goals</string>
+    <string name="stopwatch_button">Stopwatch></string>
+    <string name="record_button">Record></string>
+    <string name="text_add_exercise">Add Execerise></string>
+    <string name="text_MMDDYYY">MMDDYYYY></string>
+    <string name="text_workout_title">Title></string>
+    <string name="text_dateGoals">Date</string>
+    <string name="success_goal">Goal Successfully Recorded</string>
 </resources>
