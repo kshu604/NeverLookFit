@@ -21,7 +21,7 @@
             android:name=".activities.LoginActivity"
             android:screenOrientation="portrait">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+               <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
@@ -53,8 +53,19 @@
             android:name=".activities.RecordWorkoutDateActivity"
             android:label="@string/text_select"
             android:screenOrientation="portrait" />
-        <activity android:name=".activities.RecordWorkoutActivity" />
-        <activity android:name=".activities.RecordExercise" />
+        <activity
+            android:name=".activities.RecordWorkoutActivity">
+            <intent-filter>
+                    <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activities.RecordExercise">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".activities.SetGoalsActivity" />
         <activity android:name=".activities.PlateCalculator"></activity>
     </application>

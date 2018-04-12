@@ -79,6 +79,7 @@ public class RecordWorkoutDateActivity extends AppCompatActivity implements View
 
     private void recordActivity() {
         Intent intent = new Intent(this, RecordWorkoutActivity.class);
+        intent.putExtra("day", date);
         startActivity(intent);
     }
 

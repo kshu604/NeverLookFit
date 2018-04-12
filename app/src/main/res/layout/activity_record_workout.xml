@@ -41,7 +41,7 @@
                 android:id="@+id/buttonAddExercise"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/text_add_exercise"
+                android:text="@string/add_exercise_button"
                 tools:layout_editor_absoluteX="147dp"
                 tools:layout_editor_absoluteY="146dp" />
         </LinearLayout>
@@ -51,9 +51,16 @@
         android:id="@+id/textViewDate"
         android:layout_width="40dp"
         android:layout_height="20dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginRight="128dp"
+        android:layout_marginTop="8dp"
         android:text="@string/text_MMDDYYY"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintBaseline_toBaselineOf="@+id/editTextDate"
-        tools:layout_editor_absoluteX="196dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewLocation" />
 
     <EditText
         android:id="@+id/editTextDate"
@@ -65,6 +72,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:ems="10"
+        android:hint="YYYYMMDD"
         android:inputType="date"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.636"
@@ -92,6 +100,9 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:text="@string/text_location"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintBaseline_toBaselineOf="@+id/editTextLocation"
         app:layout_constraintEnd_toStartOf="@+id/editTextLocation"
         app:layout_constraintHorizontal_bias="0.0"
@@ -101,9 +112,11 @@
         android:id="@+id/textViewTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
         android:layout_marginStart="8dp"
         android:text="@string/text_workout_title"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintBaseline_toBaselineOf="@+id/editTextWorkoutTitle"
         app:layout_constraintStart_toStartOf="parent" />
 
