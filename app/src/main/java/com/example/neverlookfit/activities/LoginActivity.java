@@ -13,7 +13,7 @@ import android.view.View;
 
 import com.example.neverlookfit.R;
 import com.example.neverlookfit.helpers.InputValidation;
-import com.example.neverlookfit.sql.DatabaseHelperLogin;
+import com.example.neverlookfit.sql.DatabaseHelper;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
     private final AppCompatActivity activity = LoginActivity.this;
@@ -31,7 +31,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private AppCompatTextView textViewLinkRegister;
 
     private InputValidation inputValidation;
-    private DatabaseHelperLogin databaseHelperLogin;
+    private DatabaseHelper databaseHelperLogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,7 +66,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     }
 
     private void initObjects() {
-        databaseHelperLogin = new DatabaseHelperLogin(activity);
+        databaseHelperLogin = new DatabaseHelper(activity);
         inputValidation = new InputValidation(activity);
 
     }

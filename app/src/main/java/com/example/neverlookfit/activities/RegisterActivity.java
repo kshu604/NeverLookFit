@@ -14,7 +14,7 @@ import android.view.View;
 import com.example.neverlookfit.R;
 import com.example.neverlookfit.helpers.InputValidation;
 import com.example.neverlookfit.model.User;
-import com.example.neverlookfit.sql.DatabaseHelperLogin;
+import com.example.neverlookfit.sql.DatabaseHelper;
 
 public class RegisterActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -36,7 +36,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     private AppCompatTextView appCompatTextViewLoginLink;
 
     private InputValidation inputValidation;
-    private DatabaseHelperLogin databaseHelperLogin;
+    private DatabaseHelper databaseHelperLogin;
     private User user;
 
     @Override
@@ -77,7 +77,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
     private void initObjects() {
         inputValidation = new InputValidation(activity);
-        databaseHelperLogin = new DatabaseHelperLogin(activity);
+        databaseHelperLogin = new DatabaseHelper(activity);
         user = new User();
 
     }
@@ -86,7 +86,6 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-
             case R.id.appCompatButtonRegister:
                 postDataToSQLite();
                 break;
@@ -123,7 +122,6 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
             databaseHelperLogin.addUser(user);
 
-            // Snack Bar to show success message that record saved successfully
             Snackbar.make(nestedScrollView, getString(R.string.success_message), Snackbar.LENGTH_LONG).show();
             emptyInputEditText();
 

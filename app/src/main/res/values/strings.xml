@@ -57,6 +57,11 @@
     <string name="text_recordGoals">Record</string>
     <string name="text_viewGoals">View Goals</string>
     <string name="text_allGoals">All Goals</string>
-
-
+    <string name="stopwatch_button">Stopwatch></string>
+    <string name="record_button">Record></string>
+    <string name="text_add_exercise">Add Execerise></string>
+    <string name="text_MMDDYYY">MMDDYYYY></string>
+    <string name="text_workout_title">Title></string>
+    <string name="text_dateGoals">Date</string>
+    <string name="success_goal">Goal Successfully Recorded</string>
 </resources>
