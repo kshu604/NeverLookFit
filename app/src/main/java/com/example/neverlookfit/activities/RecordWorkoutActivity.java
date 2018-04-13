@@ -39,9 +39,20 @@ public class RecordWorkoutActivity extends AppCompatActivity {
         buttonAddExercise.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentExercise = new Intent(getApplicationContext(), RecordExercise.class);
+                Intent intentExercise = new Intent(getApplicationContext(), RecordExerciseActivity.class);
                 startActivityForResult(intentExercise, REQUEST_EXERCISE_CODE);
             }
+        });
+
+        Button buttonRecordWorkout = (Button) findViewById(R.id.buttonRecordWorkout);
+        buttonRecordWorkout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Get Exercises and put it in a bundle
+                // set result for workout date activity that called this
+                // finish
+            }
+
         });
 
     }

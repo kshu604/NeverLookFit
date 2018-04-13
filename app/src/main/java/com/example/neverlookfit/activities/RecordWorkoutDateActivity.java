@@ -12,6 +12,8 @@ public class RecordWorkoutDateActivity extends AppCompatActivity implements View
 
     String date;
     private Button buttonMonday, buttonTuesday, buttonWednesday, buttonThursday, buttonFriday, buttonSaturday, buttonSunday;
+    private static final int REQUEST_WORKOUT_CODE = 1;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -80,8 +82,17 @@ public class RecordWorkoutDateActivity extends AppCompatActivity implements View
     private void recordActivity() {
         Intent intent = new Intent(this, RecordWorkoutActivity.class);
         intent.putExtra("day", date);
-        startActivity(intent);
+        startActivityForResult(intent, REQUEST_WORKOUT_CODE);
     }
 
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == REQUEST_WORKOUT_CODE) {
+            if (resultCode == RESULT_OK) {
+                setResult(HomePageActivity.RESULT_OK, data);
+                finish();
+            }
+        }
+    }
 
 }

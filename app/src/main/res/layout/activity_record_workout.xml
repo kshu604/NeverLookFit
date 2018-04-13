@@ -10,10 +10,8 @@
         android:id="@+id/buttonPlateCalculator"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="35dp"
+        android:layout_marginBottom="78dp"
         android:layout_marginEnd="148dp"
-        android:layout_marginLeft="148dp"
-        android:layout_marginRight="148dp"
         android:layout_marginStart="148dp"
         android:text="@string/text_calculator"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -22,7 +20,7 @@
 
     <ScrollView
         android:layout_width="0dp"
-        android:layout_height="285dp"
+        android:layout_height="241dp"
         android:layout_marginBottom="16dp"
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toTopOf="@+id/buttonPlateCalculator"
@@ -52,9 +50,8 @@
         android:layout_width="40dp"
         android:layout_height="20dp"
         android:layout_marginEnd="128dp"
-        android:layout_marginRight="128dp"
         android:layout_marginTop="8dp"
-        android:text="@string/text_MMDDYYY"
+        android:text="@string/text_dateGoals"
         android:textColor="@android:color/darker_gray"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -135,5 +132,19 @@
         app:layout_constraintEnd_toStartOf="@+id/textViewDate"
         app:layout_constraintStart_toEndOf="@+id/textViewTitle"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonRecordWorkout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/text_record"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPlateCalculator" />
 
 </android.support.constraint.ConstraintLayout>

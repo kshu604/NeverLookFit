@@ -14,6 +14,7 @@ public class HomePageActivity extends AppCompatActivity {
     private final AppCompatActivity activity = HomePageActivity.this;
     private AppCompatTextView textViewName;
     private Button ProgressPhotos, RecordWorkout, SetGoals, ViewGoals;
+    private static final int REQUEST_WORKOUT_CODE = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,7 +49,7 @@ public class HomePageActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), RecordWorkoutDateActivity.class);
-                startActivity(intent);
+                startActivityForResult(intent, REQUEST_WORKOUT_CODE);
             }
         });
         SetGoals = (Button) findViewById(R.id.buttonSetGoals);

@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import com.example.neverlookfit.R;
 
-public class RecordExercise extends AppCompatActivity {
+public class RecordExerciseActivity extends AppCompatActivity {
 
     private TextView editTextExercise,
             editTextWeight1, editTextWeight2, editTextWeight3, editTextWeight4,
