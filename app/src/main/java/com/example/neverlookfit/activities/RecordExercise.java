@@ -50,9 +50,9 @@ public class RecordExercise extends AppCompatActivity {
                 exercise.putString("Weight4", editTextWeight4.getText().toString());
 
                 exercise.putString("Reps1", editTextReps1.getText().toString());
-                exercise.putString("Reps2", editTextReps1.getText().toString());
-                exercise.putString("Reps3", editTextReps1.getText().toString());
-                exercise.putString("Reps4", editTextReps1.getText().toString());
+                exercise.putString("Reps2", editTextReps2.getText().toString());
+                exercise.putString("Reps3", editTextReps3.getText().toString());
+                exercise.putString("Reps4", editTextReps4.getText().toString());
 
                 intent.putExtras(exercise);
                 setResult(RecordWorkoutActivity.RESULT_OK, intent);
@@ -64,7 +64,7 @@ public class RecordExercise extends AppCompatActivity {
         buttonPlateCalculator.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), PlateCalculator.class);
+                Intent intent = new Intent(getApplicationContext(), PlateCalculatorActivity.class);
                 startActivity(intent);
             }
         });
